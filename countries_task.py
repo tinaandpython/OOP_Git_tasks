@@ -20,8 +20,10 @@ class Country:
 
         if pop_density_self > pop_density_other:
             print(f"{self.name} has a larger population density than {other_country.name}")
-        else:
+        elif pop_density_self < pop_density_other:
             print(f"{self.name} has a smaller population density than {other_country.name}")
+        else:
+            print(f"{self.name} has the same population density as {other_country.name}")
 
 
 australia = Country("Australia", 23545500, 7692024)
